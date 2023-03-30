@@ -16,59 +16,71 @@
             <div class="col-2"> <img src="../../assets/images/OneDrive.png" width="18px" alt=""></div>
             <div class="col-8">One Drive - Personal</div>
             <div class="col-2"> <img src="../../assets/images/setting1.1.png" width="18px" alt=""></div>
-            
+
         </div>
     </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <input type="text" name="name" id="name">
+            <input type="text" name="address" id="address">
+            <input type="text" name="job" id="job">
+<br>
+            <button class="border border-radius" type="submit" id="submit">submit</button>
+        </div>
+    </div>
+</div>
+
     <div class="container mt-5 " id="footer">
 
-        <div class="row text-center py-3" >
-        
-            <div class="col-3 border border">
-                <div class="py-3" id="">
-<img src="../../assets\images\file1.1.png" width="30px" alt="">
-                    <!-- <i class="fa fa-folder-o"></i> -->
-                    <br>
+        <div class="row text-center">
+
+            <div class="col-3">
+                <div class="items" id="newFolder">
+                    <div class="py-2" id="">
+                        <img src="../../assets\images\file1.1.png" width="20px" alt="">
+                    </div>
                     <p class="footerLists">
                         New folder
                     </p>
                 </div>
+
+
             </div>
-            <div class="col-3 border">
-                <!-- <i class="fa fa-cog" aria-hidden="true"></i> -->
-                <div class="py-3">
-                    <img src="../../assets\images\web1.1.png" width="30px" alt="">
-                    <br>
+            <div class="col-3">
+                <div class="items">
+                    <div class="py-2">
+                        <img src="../../assets\images\web1.1.png" width="20px" alt="">
+                    </div>
                     <p class="footerLists">
                         View online
                     </p>
                 </div>
 
             </div>
-            <div class="col-3 border">
-                <div id="" class="py-3">
-                    <!-- <i class="fa  fa-trash-o"></i>
-                     -->
-                     
-<img src="../../assets\images\bin1.2.png"  width="30px" height="30px" alt="">
-                    <br>
-                    
-                </div>
-                <p class="footerLists">
-                    Recycle bin
-                </p>
-            </div>
-            <div class="col-3 border">
-                <div id="" class="py-3">
-                    
-                     
-<img src="../../assets\images\diamond1.2.png" width="30px" height="30px" alt="">
-                    <!-- <i class="fa fa-diamond" aria-hidden="true"></i> -->
-                    <br>
+            <div class="col-3 ">
+                <div class="items ">
+                    <div id="" class="py-2">
+                        <img src="../../assets\images\bin1.2.png" width="20px" height="20px" alt="">
+                    </div>
                     <p class="footerLists">
+                        Recycle bin
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-3 ">
+                <div class="items">
+                    <div id="" class="py-2">
+                        <img src="../../assets\images\diamond1.2.png" width="20px" height="20px" alt="">
+                    </div>
+                    <p class=" diamond">
                         Go premium
                     </p>
                 </div>
-                
+
+
             </div>
 
         </div>
@@ -81,21 +93,25 @@
 </html>
 
 <style>
-    #newFolder{
-        background-color: gray;
-        color: rgba(223, 222, 222, 0.616);
-        cursor: pointer;
-        transition: all ease-in-out 2s;
+
+    .items:hover {
+        border-radius:6px ;
+        background-color: rgb(218, 218, 218);
+        cursor: default;
     }
+
     .footerLists {
-        border: 1px solid gray;
-        font-size: 13px;
+        font-size: 12px;
+    }
+
+    .diamond {
+        font-size: 11px;
     }
 
     #footer {
         position: absolute;
         bottom: 0;
-        background-color: rgb(224, 227, 228);
-        border-top: 0.5px solid rgb(175, 168, 168);
+        background-color: rgb(235, 235, 235);
+        border-top: 0.5px solid rgb(211, 210, 210);
     }
 </style>
